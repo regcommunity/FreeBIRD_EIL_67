@@ -1,0 +1,6 @@
+MAINTENANCE_AGENCY_ID,CODE,NAME,DESCRIPTION,DELETED
+EBA,EBA,European Banking Authority,European Banking Authority,false
+ECB,ECB,SDD team - Reference dictionary,SDD reference dictionary,false
+ECB2,ECB2,SHS team,SHS team,false
+ECB6,ECB6,SUP Division,Supervisory Statistics Division,false
+ECB14,ECB14,Climate Change Datasets,,false
