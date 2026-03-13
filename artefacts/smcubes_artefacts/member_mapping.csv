@@ -1,5 +1,219 @@
-MAINTENANCE_AGENCY_ID,MEMBER_MAPPING_ID,NAME,CODE
+﻿MAINTENANCE_AGENCY_ID,MEMBER_MAPPING_ID,NAME,CODE
+ECB,DPM_CTL,Mapping of Collateralisation level,DPM_CTL
+ECB,DPM_IMS_F_23.02,Mapping of Impairment status for the template F23.02,DPM_IMS_F_23.02
+ECB,DPM_ACCNTNG_FRMWRK,Generation Mapping for Accounting framework,DPM_ACCNTNG_FRMWRK
+ECB,DPM_MCB_MCY_TMA_TRI,"Mapping of Main category, Type of risk, Type of market, Instrument",DPM_MCB_MCY_TMA_TRI
+ECB,DPM_CT2,Counterparty - sector,DPM_CT2
+ECB,DPM_GA2,Geographical areas - jurisdiction of incorporation,DPM_GA2
+ECB,DPM_NC2,NACE code - sector,DPM_NC2
+ECB,DPM_RP2,Related parties/Relationships - group structure,DPM_RP2
+ECB,DPM_SC1,Accounting standard,DPM_SC1
+ECB,DPM_SC3,Reporting level/perspective,DPM_SC3
+ECB,DPM_ZZ1,Code lists - IFRS,DPM_ZZ1
+ECB,DPM_ZZ2,Code lists - CRR,DPM_ZZ2
+ECB,CL_DATA_TYPE_MIR,DATA_TYPE_MIR codelist mapping into reference,CL_DATA_TYPE_MIR
+ECB,CL_MATURITY_MIR,CL_MATURITY_MIR codelist mapping into reference,CL_MATURITY_MIR
+ECB,DPM_LQC,DPM_LQC,DPM_LQC
+ECB,DPM_CPC,DPM_CPC,DPM_CPC
+ECB,DPM_ECC,Exposure class of the collateral received into Exposure class of the collateral received,DPM_ECC
+ECB,DPM_SST,Securitisation structure into Security rank level,DPM_SST
+ECB,DPM_CPE,Counterparty sector of the source of encumbrance into Institutional sector,DPM_CPE
+ECB,DPM_EUT_RSDL_MTRY_LBLTY_INTRVL,Time of encumbrance into Residual maturity of the liability interval,DPM_EUT_RSDL_MTRY_LBLTY_INTRVL
+ECB,DPM_SCC_RSDL_MTRY_CNTRCT,Specific contract clauses or netting agreements into Residual maturity of the contract,DPM_SCC_RSDL_MTRY_CNTRCT
+ECB,DPM_REF_RES,Reference date or period and  Residual maturity into Time interval w.r.t. the reference date,DPM_REF_RES
+ECB,DPM_CRA,Credit rating agency /Covered bond regime intos Credit rating agency and Statutory covered bond regime,DPM_CRA
+ECB,DPM_LQA,Liquidity quality of assets into Eligible for central bank funding,DPM_LQA
+ECB,DPM_ENC,Encumbrance intos Encumbered asset or collateral received and Available for encumbrance,DPM_ENC
+ECB,DPM_EXC,Exposure class into Exposure class,DPM_EXC
+ECB,DPM_CT1,Maps the (non-reference) variables Counterparty sector and Size of the counterparty intos Institutional sector and Enterprise size,DPM_CT1
+ECB,DPM_MA1,Type of market,DPM_MA1
+ECB,DPM_RP1,Related parties/Relationships into Related parties/Relationships,DPM_RP1
+ECB,DPM_GA1,Geographical area - residence of the counterparty,DPM_GA1
+ECB,TYP_RPRTNG_NCB,Generation Mapping for Criterion for determining the NCB to which data will be reported,TYP_RPRTNG_NCB
+ECB,DPM_APL_BAS_CPS_CPY_MCB_MCY_NAT_TMA_TYA,"Mapping of Base, Accounting portfolio, Main category, Counterparty sector, Counterparty nature, Type of activity, Type of market, Nature of activity, Instrument",DPM_APL_BAS_CPS_CPY_MCB_MCY_NAT_TMA_TYA
+ECB,DPM_BAS_RES,Mapping of Base,DPM_BAS_RES
+ECB,DPM_BAS_CLS_CTL_CIR_CPY_MCB_MCY_OFS,"Mapping of Base, Main category, Own funds, Collateral status, Counterparty nature, Creditor / Insolvency ranking, Instrument, Collateralisation level",DPM_BAS_CLS_CTL_CIR_CPY_MCB_MCY_OFS
+ECB,DPM_BAS_CPS_CPY_CPZ_MCB_MCY_NAT_TMA_TYA_PUR,"Mapping of Base, Main category, Counterparty sector, Counterparty nature, Purpose, Type of activity, Type of market, Nature of activity, Size of the counterparty, Instrument",DPM_BAS_CPS_CPY_CPZ_MCB_MCY_NAT_TMA_TYA_PUR
+ECB,DPM_BAS_MCB_MRE_SEL_MCY,"Mapping of Base, Main category, Instrument, Governed by law of an EU Member State, Eligibility for MREL",DPM_BAS_MCB_MRE_SEL_MCY
+ECB,DPM_BAS_MCY_RES,"Mapping of Base, Main category",DPM_BAS_MCY_RES
+ECB,DPM_BAS_MCY_CNO_MCI_RPR,"Mapping of Base, Main category, Controlling and non-controlling owners, Main category provided of Investee, Related parties/Relationships",DPM_BAS_MCY_CNO_MCI_RPR
+ECB,DPM_BAS_MCY_OFS,"Mapping of Base, Main category, Own funds",DPM_BAS_MCY_OFS
+ECB,DPM_CIG,Mapping of Country of incorporation of guarantor,DPM_CIG
+ECB,DPM_COM,Mapping of Type of financial interconnection,DPM_COM
+ECB,DPM_COM_Z04,Mapping of Type of financial interconnection for the template Z04,DPM_COM_Z04
+ECB,DPM_COM_Z05.01,Mapping of Type of financial interconnection for the template Z05.01,DPM_COM_Z05.01
+ECB,DPM_COM_Z05.02,Mapping of Type of financial interconnection for the template Z05.02,DPM_COM_Z05.02
+ECB,DPM_CPS_CPY_CPZ,"Mapping of Counterparty sector, Counterparty nature, Size of the counterparty",DPM_CPS_CPY_CPZ
+ECB,DPM_CRH,Mapping of Critical function (CF to LE),DPM_CRH
+ECB,DPM_CRI,Mapping of Critical function (CF to CBL),DPM_CRI
+ECB,DPM_CRJ,Mapping of Critical function (CS to CF),DPM_CRJ
+ECB,DPM_CRK,Mapping of Critical function  (FMI to CF),DPM_CRK
+ECB,DPM_CRL,Mapping of Critical function (IS to LE and CF),DPM_CRL
+ECB,DPM_GTR,Mapping of Guarantor,DPM_GTR
+ECB,DPM_LCF,Mapping of Location of critical function,DPM_LCF
+ECB,DPM_LCG,Mapping of Location of critical function (CF to LE),DPM_LCG
+ECB,DPM_LCH,Mapping of Location of critical function (CF to CBL),DPM_LCH
+ECB,DPM_LCI,Mapping of Location of critical function (CS to CF),DPM_LCI
+ECB,DPM_LCK,Mapping of Location of critical function (FMI to CF),DPM_LCK
+ECB,DPM_LCL,Mapping of Location of critical function (IS to LE and CF),DPM_LCL
+ECB,DPM_MCR,Mapping of Exclusion from Bail-in,DPM_MCR
+ECB,DPM_MCY_RES,Mapping of Main category,DPM_MCY_RES
+ECB,DPM_MRE,Mapping of Eligibility for MREL,DPM_MRE
+ECB,DPM_ORI,Mapping of Original maturity,DPM_ORI
+ECB,DPM_PUR_RES,Mapping of Purpose,DPM_PUR_RES
+ECB,DPM_RES,Mapping of Residual maturity,DPM_RES
+ECB,DPM_RPR_RES,Mapping of Related parties/Relationships,DPM_RPR_RES
+ECB,DPM_RPR_Z02,Mapping of Related parties/Relationships for the template Z02,DPM_RPR_Z02
+ECB,DPM_SEL,Mapping of Governed by law of an EU Member State,DPM_SEL
+ECB,DPM_SUB_RES,Mapping of Subordinated,DPM_SUB_RES
+ECB,DPM_TCV,Mapping of Type of coverage of deposits by a DGS,DPM_TCV
+ECB,DPM_TSS,Mapping of Type of service received (Code list),DPM_TSS
+ECB,DPM_VDF,Mapping of Factors considered in the valuation of derivatives,DPM_VDF
+ECB,DPM_BTI,Mapping of Instrument is listed on exchange,DPM_BTI
+ECB,DPM_ROL,Mapping of Role in the contract,DPM_ROL
+ECB,DPM_ei575,Mapping of FMI system type,DPM_ei575
+ECB,DPM_ei584,Mapping of Type of information system,DPM_ei584
+ECB,DPM_ei566,Mapping of Degree of impact on market,DPM_ei566
+ECB,DPM_ei555,Mapping of Type of entity,DPM_ei555
+ECB,DPM_ei578,Mapping of Mode of participation in FMI,DPM_ei578
+ECB,DPM_ei319,Mapping of Group or individual,DPM_ei319
+ECB,DPM_ei574,Mapping of Is resolution-proof contract,DPM_ei574
+ECB,DPM_ei567,Mapping of Degree of substitutability,DPM_ei567
+ECB,DPM_ei572,Mapping of Estimated time for substitutability,DPM_ei572
+ECB,DPM_ei573,Mapping of Estimated time for access to contracts,DPM_ei573
+ECB,DPM_ei600,Mapping of Country the law of which governs the contract / master agreement,DPM_ei600
+ECB,DPM_ei581,Mapping of Country the law of which governs access to the FMI,DPM_ei581
+ECB,DPM_ei562,Mapping of Name of Deposit Guarantee Scheme (DGS),DPM_ei562
+ECB,DPM_ei326,Mapping of Article 7 Waiver granted,DPM_ei326
+ECB,DPM_ei634,Mapping of Location of critical function,DPM_ei634
+ECB,DPM_ei635,Mapping of Critical function ID,DPM_ei635
+ECB,AMOUNT_CAT,Mapping of Amount category for the template AMOUNTCAT,AMOUNT_CAT
+ECB,IR_BUS_COV,Mapping of IR business coverage for the template IRBUSCOV,IR_BUS_COV
+ECB,MATURITY_NOT_IRATE,Mapping of Original maturity/Period of notice/Initial rate fixation for the template MATURITYNOTIRATE,MATURITY_NOT_IRATE
+ECB,BS_ITEM_DATA_TYPE_MIR,"Mapping of Balance sheet item, MFI interest rate data type for the template BSITEM",BS_ITEM_DATA_TYPE_MIR
+ECB,CSDB_SENIORITY,Mapping of Instrument seniority type for the template CSDBSENIORITY,CSDB_SENIORITY
+ECB,CSDB_IDIRCOUNTRY,Mapping of Issuer country for the template CSDBIDIRCOUNTRY,CSDB_IDIRCOUNTRY
+ECB,CSDB_ISCLASHGROUP,Mapping of Group type for the template CSDBISCLASHGROUP,CSDB_ISCLASHGROUP
+ECB,CSDB_IDIRDEBTTYPE,Mapping of Debt type for the template CSDBIDIRDEBTTYPE,CSDB_IDIRDEBTTYPE
+ECB,CSDB_IDIRDEBTTYPE_N,Mapping of Primary Asset Classification 2 for the template CSDBIDIRDEBTTYPEN,CSDB_IDIRDEBTTYPE_N
+ECB,CSDB_MUTUALFUNDTYPE,Mapping of Fund type for the template CSDBMUTUALFUNDTYPE,CSDB_MUTUALFUNDTYPE
+ECB,CSDB_IDIRCOUPONTYPE,Mapping of Coupon type for the template CSDBIDIRCOUPONTYPE,CSDB_IDIRCOUPONTYPE
+ECB,CSDB_VA_ESCBCODETYPE,Mapping of ESCB issuer identifier type for the template CSDBVAESCBCODETYPE,CSDB_VA_ESCBCODETYPE
+ECB,CSDB_IDIRASSETSECTYPE,Mapping of Asset securitisation type for the template CSDBIDIRASSETSECTYPE,CSDB_IDIRASSETSECTYPE
+ECB,CSDB_VA_SECURITYSTATUS,Mapping of Security status for the template CSDBVASECURITYSTATUS,CSDB_VA_SECURITYSTATUS
+ECB,CSDB_HASEMBEDDEDOPTION,Mapping of Has Embedded Option for the template CSDBHASEMBEDDEDOPTION,CSDB_HASEMBEDDEDOPTION
+ECB,CSDB_MFMARKETSTRUCTURE,Mapping of Fund asset structure type for the template CSDBMFMARKETSTRUCTURE,CSDB_MFMARKETSTRUCTURE
+ECB,CSDB_DIVIDENDAMOUNTTYPE,Mapping of Dividend amount type for the template CSDBDIVIDENDAMOUNTTYPE,CSDB_DIVIDENDAMOUNTTYPE
+ECB,CSDB_IDIRCURRENCY_PRICE,Mapping of Price currency for the template CSDBIDIRCURRENCYPRICE,CSDB_IDIRCURRENCY_PRICE
+ECB,CSDB_IDIRREDEMPTIONTYPE,Mapping of Redemption type for the template CSDBIDIRREDEMPTIONTYPE,CSDB_IDIRREDEMPTIONTYPE
+ECB,CSDB_PRIMARYLISTINGNAME,Mapping of Primary listing name for the template CSDBPRIMARYLISTINGNAME,CSDB_PRIMARYLISTINGNAME
+ECB,CSDB_IDIRCURRENCY_COUPON,Mapping of Coupon currency for the template CSDBIDIRCURRENCYCOUPON,CSDB_IDIRCURRENCY_COUPON
+ECB,CSDB_IDIRCOUPONFREQUENCY,Mapping of Last Coupon frequency for the template CSDBIDIRCOUPONFREQUENCY,CSDB_IDIRCOUPONFREQUENCY
+ECB,CSDB_DEBTACCRUALDEBTOR_DM,Mapping of Accrued income factor – value type  for the template CSDBDEBTACCRUALDEBTORDM,CSDB_DEBTACCRUALDEBTOR_DM
+ECB,CSDB_IDIRCURRENCY_NOMINAL,Mapping of Nominal currency for the template CSDBIDIRCURRENCYNOMINAL,CSDB_IDIRCURRENCY_NOMINAL
+ECB,CSDB_VA_ISELIGIBLEFOREADB,Mapping of Is In EADB for the template CSDBVAISELIGIBLEFOREADB,CSDB_VA_ISELIGIBLEFOREADB
+ECB,CSDB_PUBLICATIONPRICETYPE,Mapping of Price value type for the template CSDBPUBLICATIONPRICETYPE,CSDB_PUBLICATIONPRICETYPE
+ECB,CSDB_PRIMARYLISTINGCOUNTRY,Mapping of Primary listing residency country for the template CSDBPRIMARYLISTINGCOUNTRY,CSDB_PRIMARYLISTINGCOUNTRY
+ECB,CSDB_IDIRCURRENCY_DIVIDEND,Mapping of Dividend currency for the template CSDBIDIRCURRENCYDIVIDEND,CSDB_IDIRCURRENCY_DIVIDEND
+ECB,CSDB_MFGEOGRAPHICSTRUCTURE,Mapping of Fund geographical market structure for the template CSDBMFGEOGRAPHICSTRUCTURE,CSDB_MFGEOGRAPHICSTRUCTURE
+ECB,CSDB_AMOUNTOUTSTANDINGTYPE,Mapping of Amounts Outstanding type for the template CSDBAMOUNTOUTSTANDINGTYPE,CSDB_AMOUNTOUTSTANDINGTYPE
+ECB,CSDB_IDIRCURRENCY_REDEMPTION,Mapping of Redemption currency for the template CSDBIDIRCURRENCYREDEMPTION,CSDB_IDIRCURRENCY_REDEMPTION
+ECB,CSDB_IDIRREDEMPTIONFREQUENCY,Mapping of Redemption frequency for the template CSDBIDIRREDEMPTIONFREQUENCY,CSDB_IDIRREDEMPTIONFREQUENCY
+ECB,CSDB_VA_RESIDUALMATURITYCLASS,Mapping of Residual maturity class for the template CSDBVARESIDUALMATURITYCLASS,CSDB_VA_RESIDUALMATURITYCLASS
+ECB,CSDB_IDIRCURRENCY_AMOUNTOUTST,Mapping of Currency of the amount issued for the template CSDBIDIRCURRENCYAMOUNTOUTST,CSDB_IDIRCURRENCY_AMOUNTOUTST
+ECB,CSDB_IDIRCURRENCY_AMOUNTISSUED,Mapping of Currency of the amount outstanding for the template CSDBIDIRCURRENCYAMOUNTISSUED,CSDB_IDIRCURRENCY_AMOUNTISSUED
+ECB,CSDB_IDIRCLASSIFICATIONCODE_NACE,Mapping of Issuer NACE sector  for the template CSDBIDIRCLASSIFICATIONCODENACE,CSDB_IDIRCLASSIFICATIONCODE_NACE
+ECB,CSDB_IDIRCLASSIFICATIONCODE_ESAO10,Mapping of Issuer ESA 2010 sector for the template CSDBIDIRCLASSIFICATIONCODEESAO10,CSDB_IDIRCLASSIFICATIONCODE_ESAO10
+ECB,CSDB_IDIRCLASSIFICATIONCODE_ESAI10,Mapping of Instrument ESA 2010 class for the template CSDBIDIRCLASSIFICATIONCODEESAI10,CSDB_IDIRCLASSIFICATIONCODE_ESAI10
+ECB,CSDB_PUBLICATIONPRICEQUOTATIONBASIS,Mapping of Quotation basis for the template CSDBPUBLICATIONPRICEQUOTATIONBASIS,CSDB_PUBLICATIONPRICEQUOTATIONBASIS
+ECB,SHS_TPH,Mapping of Third Party Holdings Relevance for Aggregation for the template SHS,SHS_TPH
+ECB,SHS_ESCB,Mapping of ESCB for the template SHS,SHS_ESCB
+ECB,SHS_FREQ,Mapping of Frequency for the template SHS,SHS_FREQ
+ECB,SHS_EAPLUS,Mapping of EA plus for the template SHS,SHS_EAPLUS
+ECB,SHS_REF_AREA,Mapping of Reporting Country for the template SHS,SHS_REF_AREA
+ECB,SHS_NOM_CURR,Mapping of Nominal currency for the template SHS,SHS_NOM_CURR
+ECB,SHS_DEBT_TYPE,Mapping of Debt type for the template SHS,SHS_DEBT_TYPE
+ECB,SHS_EARLY_RED,Mapping of Early redemptions included for the template SHS,SHS_EARLY_RED
+ECB,SHS_GROUP_AREA,Mapping of Country of residence of the group for the template SHS,SHS_GROUP_AREA
+ECB,SHS_GROUP_TYPE,Mapping of Group type for the template SHS,SHS_GROUP_TYPE
+ECB,SHS_EXPSR_CLSS,Mapping of Exposure class as defined in accordance with Regulation (EU) No 575/2013 for the template SHS,SHS_EXPSR_CLSS
+ECB,SHS_IS_IN_EADB,Mapping of Is in EADB for the template SHS,SHS_IS_IN_EADB
+ECB,SHS_FRBRNC_STTS,"Mapping of 	Status of forbearance and renegotiation for the template SHS",SHS_FRBRNC_STTS
+ECB,SHS_COUPON_TYPE,Mapping of Coupon type for the template SHS,SHS_COUPON_TYPE
+ECB,SHS_ENTITY_AREA,Mapping of Country of residency of the entity for the template SHS,SHS_ENTITY_AREA
+ECB,SHS_HOLDER_AREA,Mapping of Holder Country for the template SHS,SHS_HOLDER_AREA
+ECB,SHS_INSTR_CLASS,Mapping of Instrument ESA 2010 class for the template SHS,SHS_INSTR_CLASS
+ECB,SHS_IMPRMNT_STTS,Mapping of Imparement status for the template SHS,SHS_IMPRMNT_STTS
+ECB,SHS_PRFRMNG_STTS,Mapping of Performing status for the template SHS,SHS_PRFRMNG_STTS
+ECB,SHS_SRC_ENCMBRNC,Mapping of Source of encumbrance for the template SHS,SHS_SRC_ENCMBRNC
+ECB,SHS_REP_NOM_CURR,Mapping of Reported Nominal currency for the template SHS,SHS_REP_NOM_CURR
+ECB,SHS_PRDNTL_PRTFL,Mapping of Prudential portfolio for the template SHS,SHS_PRDNTL_PRTFL
+ECB,SHS_UNIT_MEASURE,Mapping of Unit for the template SHS,SHS_UNIT_MEASURE
+ECB,SHS_GROUP_SECTOR,Mapping of ESA 2010 Sector of the head of Group for the template SHS,SHS_GROUP_SECTOR
+ECB,SHS_ACCR_INTR_MV,Mapping of Accrued interests for market values for the template SHS,SHS_ACCR_INTR_MV
+ECB,SHS_ENTITY_SECTOR,Mapping of ESA 2010 sector of the entity for the template SHS,SHS_ENTITY_SECTOR
+ECB,SHS_COMPILING_ORG,Mapping of Reporting institution code for the template SHS,SHS_COMPILING_ORG
+ECB,SHS_ENTITY_STATUS,Mapping of Entity status for the template SHS,SHS_ENTITY_STATUS
+ECB,SHS_HOLDER_SECTOR,Mapping of Holder Sector for the template SHS,SHS_HOLDER_SECTOR
+ECB,SHS_ISSUER_SECTOR,Mapping of Issuer ESA 2010 sector for the template SHS,SHS_ISSUER_SECTOR
+ECB,SHS_GROUP_ID_TYPE,Mapping of Group ID type for the template SHS,SHS_GROUP_ID_TYPE
+ECB,SHS_ENTITY_ID_TYPE,Mapping of Entity ID type  for the template SHS,SHS_ENTITY_ID_TYPE
+ECB,SHS_ISSUER_ID_TYPE,Mapping of Issuer ID type for the template SHS,SHS_ISSUER_ID_TYPE
+ECB,SHS_DFLT_STTS_ISSR,Mapping of Default status of the issuer for the template SHS,SHS_DFLT_STTS_ISSR
+ECB,SHS_SENIORITY_TYPE,Mapping of Instrument seniority type for the template SHS,SHS_SENIORITY_TYPE
+ECB,SHS_ISSUER_COUNTRY,Mapping of Issuer country for the template SHS,SHS_ISSUER_COUNTRY
+ECB,SHS_IDENTIFIER_TYPE,Mapping of Identifier type for the template SHS,SHS_IDENTIFIER_TYPE
+ECB,SHS_UNIT_MEASURE_NV,Mapping of Unit for Nominal Value for the template SHS,SHS_UNIT_MEASURE_NV
+ECB,SHS_REPORTING_BASIS,Mapping of Reporting basis  for the template SHS,SHS_REPORTING_BASIS
+ECB,SHS_QUOTATION_BASIS,Mapping of Quotation basis for the template SHS,SHS_QUOTATION_BASIS
+ECB,SHS_COLLATERAL_AREA,Mapping of Collateral geographical location for the template SHS,SHS_COLLATERAL_AREA
+ECB,SHS_SECURITY_STATUS,Mapping of Security status for the template SHS,SHS_SECURITY_STATUS
+ECB,SHS_ORIG_MAT_BRACKET,Mapping of Original maturity bracket (category) for the template SHS,SHS_ORIG_MAT_BRACKET
+ECB,SHS_PRICE_VALUE_TYPE,Mapping of Price value type for the template SHS,SHS_PRICE_VALUE_TYPE
+ECB,SHS_LAST_COUPON_FREQ,Mapping of Last coupon date for the template SHS,SHS_LAST_COUPON_FREQ
+ECB,SHS_ACCNTNG_CLSSFCTN,Mapping of Accounting classification of instruments for the template SHS,SHS_ACCNTNG_CLSSFCTN
+ECB,SHS_RESID_MAT_BRACKET,Mapping of Residual maturity bracket (category) for the template SHS,SHS_RESID_MAT_BRACKET
+ECB,SHS_PRICE_VALUE_BASIS,Mapping of Price value basis for the template SHS,SHS_PRICE_VALUE_BASIS
+ECB,SHS_GUARANTOR_ID_TYPE,Mapping of Guarantor ID type for the template SHS,SHS_GUARANTOR_ID_TYPE
+ECB,SHS_DIVIDEND_CURRENCY,Mapping of Dividend currency for the template SHS,SHS_DIVIDEND_CURRENCY
+ECB,SHS_ISSUER_NACE_SECTOR,Mapping of Issuer NACE sector for the template SHS,SHS_ISSUER_NACE_SECTOR
+ECB,SHS_GROUP_ACC_STANDARD,Mapping of Accounting Standard of the Group for the template SHS,SHS_GROUP_ACC_STANDARD
+ECB,SHS_DFLT_STTS_INSTRMNT,Mapping of Default status of the instrument for the template SHS,SHS_DFLT_STTS_INSTRMNT
+ECB,SHS_PRIMARY_ASSET_CLASS,Mapping of Primary asset classification for the template SHS,SHS_PRIMARY_ASSET_CLASS
+ECB,SHS_ENTITY_ACC_STANDARD,Mapping of Accounting Standard of the entity for the template SHS,SHS_ENTITY_ACC_STANDARD
+ECB,SHS_FUNCTIONAL_CATEGORY,Mapping of Function for the template SHS,SHS_FUNCTIONAL_CATEGORY
+ECB,SHS_APPRCH_PRDNTL_PRPSS,Mapping of Approach for prudential purposes for the template SHS,SHS_APPRCH_PRDNTL_PRPSS
+ECB,SHS_DIVIDEND_AMOUNT_TYPE,Mapping of Dividend amount type for the template SHS,SHS_DIVIDEND_AMOUNT_TYPE
+ECB,SHS_IMPRMNT_ASSSSMNT_MTHD,Mapping of Impairment assessment method for the template SHS,SHS_IMPRMNT_ASSSSMNT_MTHD
+ECB,SHS_INTRA_GROUP_ACC_SCOPE,Mapping of Issuer is part of the Group (accounting scope) for the template SHS,SHS_INTRA_GROUP_ACC_SCOPE
+ECB,SHS_INTRA_GROUP_PRUD_SCOPE,Mapping of Issuer is part of the Group (prudential scope) for the template SHS,SHS_INTRA_GROUP_PRUD_SCOPE
+ECB,SHS_IMMEDIATE_PARENT_ID_TYPE,Mapping of Immediate parent ID type for the template SHS,SHS_IMMEDIATE_PARENT_ID_TYPE
+ECB,SHS_ASSET_SECURITISATION_TYPE,Mapping of Asset securitisation type for the template SHS,SHS_ASSET_SECURITISATION_TYPE
+ECB,FREQ,Mapping of Frequency for the template FREQ,FREQ
+ECB,REF_AREA,Mapping of Reference area for the template REFAREA,REF_AREA
+ECB,ADJUSTMENT,Mapping of Adjustment indicator for the template ADJUSTMENT,ADJUSTMENT
+ECB,BS_REP_SECTOR,Mapping of BS reference sector breakdown for the template BSREPSECTOR,BS_REP_SECTOR
+ECB,MATURITY_ORIG,"Mapping of Balance sheet item, Data type, Original maturity for the template MATURITYORIG",MATURITY_ORIG
+ECB,COUNT_AREA,Mapping of Counterpart area for the template COUNTAREA,COUNT_AREA
+ECB,BS_COUNT_SECTOR,Mapping of BS counterpart sector for the template BSCOUNTSECTOR,BS_COUNT_SECTOR
+ECB,CURRENCY_TRANS,Mapping of Currency of transaction for the template CURRENCYTRANS,CURRENCY_TRANS
+ECB,BS_SUFFIX,Mapping of Balance sheet suffix for the template BSSUFFIX,BS_SUFFIX
+ECB,DPM_ECC_MCG_AE_F36.02.b,"Mapping of Main category of collateral or guarantee received, Exposure class of the collateral received for the template AEF36.02.b",DPM_ECC_MCG_AE_F36.02.b
+ECB,DPM_CPE_AE_F32.04.b,Mapping of Counterparty sector of the source of encumbrance for the template AEF32.04.b,DPM_CPE_AE_F32.04.b
+ECB,DPM_CPE_CPS_AE_F32.04.a,"Mapping of Counterparty sector of the source of encumbrance, Counterparty sector for the template AEF32.04.a",DPM_CPE_CPS_AE_F32.04.a
+ECB,DPM_MCY_AE_F32.03.a,Mapping of Main category for the template AEF32.03.a,DPM_MCY_AE_F32.03.a
+ECB,DPM_BAS_EXC_MCG_MCY_AE_F32.01,"Mapping of Base, Exposure class, Main category of collateral or guarantee received, Main category for the template AEF32.01",DPM_BAS_EXC_MCG_MCY_AE_F32.01
+ECB,DPM_CPC_AE_F36.01.b,Mapping of Counterparty sector of the collateral for the template AEF36.01.b,DPM_CPC_AE_F36.01.b
+ECB,DPM_MCS_AE_F32.04.b,Mapping of Main category of the source of encumbrance for the template AEF32.04.b,DPM_MCS_AE_F32.04.b
+ECB,DPM_MCS_SST_AE_F32.03.a,"Mapping of Main category of the source of encumbrance, Securitisation structure for the template AEF32.03.a",DPM_MCS_SST_AE_F32.03.a
+ECB,DPM_BAS_ECC_EXC_MCG_MCY_AE_F36.02.a,"Mapping of Base, Exposure class of the collateral received, Exposure class, Main category of collateral or guarantee received, Main category for the template AEF36.02.a",DPM_BAS_ECC_EXC_MCG_MCY_AE_F36.02.a
+ECB,DPM_BAS_EXC_MCY_AE_F36.01.a,"Mapping of Base, Main category, Exposure class for the template AEF36.01.a",DPM_BAS_EXC_MCY_AE_F36.01.a
+ECB,DPM_CPS_AE_F32.01,Mapping of Counterparty sector for the template AEF32.01,DPM_CPS_AE_F32.01
+ECB,DPM_CPC_AE_F32.02.a,Mapping of Counterparty sector of the collateral for the template AEF32.02.a,DPM_CPC_AE_F32.02.a
 ECB,DPM_BAS_MCY_AE_F32.02.b,"Mapping of Base, Main category for the template AEF32.02.b",DPM_BAS_MCY_AE_F32.02.b
+ECB,DPM_BAS_MCS_MCY_AE_F32.04.a,"Mapping of Base, Main category, Main category of the source of encumbrance for the template AEF32.04.a",DPM_BAS_MCS_MCY_AE_F32.04.a
+ECB,DPM_ECC_MCG_AE_F36.01.b,"Mapping of Main category of collateral or guarantee received, Exposure class of the collateral received for the template AEF36.01.b",DPM_ECC_MCG_AE_F36.01.b
+ECB,DPM_BAS_ECC_EXC_MCG_MCY_AE_F32.02.a,"Mapping of Base, Exposure class of the collateral received, Exposure class, Main category of collateral or guarantee received, Main category for the template AEF32.02.a",DPM_BAS_ECC_EXC_MCG_MCY_AE_F32.02.a
 ECB,DPM_MCG_AE,Mapping of Main category of collateral or guarantee received for the template AE,DPM_MCG_AE
 ECB,DPM_BAS_EXC_MCY_AE_F32.04.b,"Mapping of Base, Exposure class, Main category for the template AEF32.04.b",DPM_BAS_EXC_MCY_AE_F32.04.b
 ECB,DPM_ei328,Mapping of Primary asset class of cover pool,DPM_ei328
@@ -113,7 +327,12 @@ ECB,DPM_ALO_F_12.00,Mapping of Type of allowance for the template F12.00,DPM_ALO
 ECB,DPM_DPS,Mapping of Derivatives Purchased/Sold,DPM_DPS
 ECB,DPM_CPS_MCB_MCY_TMA_TRI,"Mapping of Main category, Counterparty sector, Type of risk, Type of market, Instrument",DPM_CPS_MCB_MCY_TMA_TRI
 ECB,DPM_PLD,Mapping of Designation (Fair value option),DPM_PLD
+ECB,DPM_BAS_CPS_MCB_MCY,"Mapping of Counterparty sector, Main category, Base, Instrument",DPM_BAS_CPS_MCB_MCY
+ECB,DPM_BAS_MCB_MCY_RUA_APL,"Mapping of Base, Main category, Accounting portfolio, Instrument, Rigth-of-use assets",DPM_BAS_MCB_MCY_RUA_APL
 ECB,DPM_BAS_MCB_MCY_APL,"Mapping of Base, Main category, Accounting portfolio, Instrument",DPM_BAS_MCB_MCY_APL
+ECB,DPM_LHO,Mapping of Is LEI Code/National Code of Holding,DPM_LHO
+ECB,DPM_TYC,Mapping of Is LEI Code/National Code of Investee,DPM_TYC
+ECB,DPM_IMS_3.0,Mapping of Impairment status for the template 3.0,DPM_IMS_3.0
 ECB,DPM_CPS_CPZ_MCG_MCY_PUR,"Mapping of Main category, Counterparty sector, Size of the counterparty, Main category of collateral or guarantee received, Purpose",DPM_CPS_CPZ_MCG_MCY_PUR
 ECB,DPM_ACT,Mapping of Accounting treatment,DPM_ACT
 ECB,DPM_TRT,Mapping of Type of risk transfer,DPM_TRT
@@ -123,6 +342,9 @@ ECB,DPM_BAS_CPS_MCY_APL,"Mapping of Counterparty sector, Main category, Accounti
 ECB,DPM_IMS_PFS_TPD,"Mapping of Impairment status, Performing status, Time past due",DPM_IMS_PFS_TPD
 ECB,DPM_MCE_APL_RPR,"Mapping of Main category that generates income or expenses, Accounting portfolio, Related parties/Relationships",DPM_MCE_APL_RPR
 ECB,DPM_BAS_MCY_APL_RPR,"Mapping of Main category, Accounting portfolio, Base, Related parties/Relationships",DPM_BAS_MCY_APL_RPR
+ECB,DPM_IMS_PFS_TPD_3.0,"Mapping of Impairment status, Performing status, Time past due for the template 3.0",DPM_IMS_PFS_TPD_3.0
+ECB,DPM_FRS_IMS_PFS_TPD_3.0,"Mapping of Impairment status, Performing status, Time past due, Financial reporting standard for the template 3.0",DPM_FRS_IMS_PFS_TPD_3.0
+ECB,DPM_IMS_PFS_3.0,"Mapping of Impairment status, Performing status for the template 3.0",DPM_IMS_PFS_3.0
 ECB,DPM_BAS_CNO_MCB_MCF_MCY_REC,"Mapping of Base, Instrument, Main category, Controlling and non-controlling owners, To be reclassified to profit or loss, Hedged or hedging instrument",DPM_BAS_CNO_MCB_MCF_MCY_REC
 ECB,DPM_ei4,Mapping of Accounting standard,DPM_ei4
 ECB,DPM_ei207,Mapping of Reporting level,DPM_ei207
@@ -156,66 +378,3 @@ ECB,DPM_BAS_CPS_EXC_MCY_AE_F36.01.a,"Mapping of Base, Counterparty sector, Expos
 ECB,DPM_LQA_AE_F36.01.c,Mapping of Liquidity quality of assets for the template AEF36.01.c,DPM_LQA_AE_F36.01.c
 ECB,DPM_CRA_AE,Mapping of Credit rating agency /Covered bond regime for the template AE,DPM_CRA_AE
 ECB,DPM_BAS_CRA_AE_F35.00.c,"Mapping of Base, Credit rating agency /Covered bond regime for the template AEF35.00.c",DPM_BAS_CRA_AE_F35.00.c
-ECB,SHS_TPH,Mapping of Third Party Holdings Relevance for Aggregation for the template SHS,SHS_TPH
-ECB,SHS_ESCB,Mapping of ESCB for the template SHS,SHS_ESCB
-ECB,SHS_FREQ,Mapping of Frequency for the template SHS,SHS_FREQ
-ECB,SHS_EAPLUS,Mapping of EA plus for the template SHS,SHS_EAPLUS
-ECB,SHS_REF_AREA,Mapping of Reporting Country for the template SHS,SHS_REF_AREA
-ECB,SHS_NOM_CURR,Mapping of Nominal currency for the template SHS,SHS_NOM_CURR
-ECB,SHS_DEBT_TYPE,Mapping of Debt type for the template SHS,SHS_DEBT_TYPE
-ECB,SHS_EARLY_RED,Mapping of Early redemptions included for the template SHS,SHS_EARLY_RED
-ECB,SHS_GROUP_AREA,Mapping of Country of residence of the group for the template SHS,SHS_GROUP_AREA
-ECB,SHS_GROUP_TYPE,Mapping of Group type for the template SHS,SHS_GROUP_TYPE
-ECB,SHS_EXPSR_CLSS,Mapping of Exposure class as defined in accordance with Regulation (EU) No 575/2013 for the template SHS,SHS_EXPSR_CLSS
-ECB,SHS_IS_IN_EADB,Mapping of Is in EADB for the template SHS,SHS_IS_IN_EADB
-ECB,SHS_FRBRNC_STTS,Mapping of 	Status of forbearance and renegotiation for the template SHS,SHS_FRBRNC_STTS
-ECB,SHS_COUPON_TYPE,Mapping of Coupon type for the template SHS,SHS_COUPON_TYPE
-ECB,SHS_ENTITY_AREA,Mapping of Country of residency of the entity for the template SHS,SHS_ENTITY_AREA
-ECB,SHS_HOLDER_AREA,Mapping of Holder Country for the template SHS,SHS_HOLDER_AREA
-ECB,SHS_INSTR_CLASS,Mapping of Instrument ESA 2010 class for the template SHS,SHS_INSTR_CLASS
-ECB,SHS_IMPRMNT_STTS,Mapping of Imparement status for the template SHS,SHS_IMPRMNT_STTS
-ECB,SHS_PRFRMNG_STTS,Mapping of Performing status for the template SHS,SHS_PRFRMNG_STTS
-ECB,SHS_SRC_ENCMBRNC,Mapping of Source of encumbrance for the template SHS,SHS_SRC_ENCMBRNC
-ECB,SHS_REP_NOM_CURR,Mapping of Reported Nominal currency for the template SHS,SHS_REP_NOM_CURR
-ECB,SHS_PRDNTL_PRTFL,Mapping of Prudential portfolio for the template SHS,SHS_PRDNTL_PRTFL
-ECB,SHS_UNIT_MEASURE,Mapping of Unit for the template SHS,SHS_UNIT_MEASURE
-ECB,SHS_GROUP_SECTOR,Mapping of ESA 2010 Sector of the head of Group for the template SHS,SHS_GROUP_SECTOR
-ECB,SHS_ACCR_INTR_MV,Mapping of Accrued interests for market values for the template SHS,SHS_ACCR_INTR_MV
-ECB,SHS_ENTITY_SECTOR,Mapping of ESA 2010 sector of the entity for the template SHS,SHS_ENTITY_SECTOR
-ECB,SHS_COMPILING_ORG,Mapping of Reporting institution code for the template SHS,SHS_COMPILING_ORG
-ECB,SHS_ENTITY_STATUS,Mapping of Entity status for the template SHS,SHS_ENTITY_STATUS
-ECB,SHS_HOLDER_SECTOR,Mapping of Holder Sector for the template SHS,SHS_HOLDER_SECTOR
-ECB,SHS_ISSUER_SECTOR,Mapping of Issuer ESA 2010 sector for the template SHS,SHS_ISSUER_SECTOR
-ECB,SHS_GROUP_ID_TYPE,Mapping of Group ID type for the template SHS,SHS_GROUP_ID_TYPE
-ECB,SHS_ENTITY_ID_TYPE,Mapping of Entity ID type  for the template SHS,SHS_ENTITY_ID_TYPE
-ECB,SHS_ISSUER_ID_TYPE,Mapping of Issuer ID type for the template SHS,SHS_ISSUER_ID_TYPE
-ECB,SHS_DFLT_STTS_ISSR,Mapping of Default status of the issuer for the template SHS,SHS_DFLT_STTS_ISSR
-ECB,SHS_SENIORITY_TYPE,Mapping of Instrument seniority type for the template SHS,SHS_SENIORITY_TYPE
-ECB,SHS_ISSUER_COUNTRY,Mapping of Issuer country for the template SHS,SHS_ISSUER_COUNTRY
-ECB,SHS_IDENTIFIER_TYPE,Mapping of Identifier type for the template SHS,SHS_IDENTIFIER_TYPE
-ECB,SHS_UNIT_MEASURE_NV,Mapping of Unit for Nominal Value for the template SHS,SHS_UNIT_MEASURE_NV
-ECB,SHS_REPORTING_BASIS,Mapping of Reporting basis  for the template SHS,SHS_REPORTING_BASIS
-ECB,SHS_QUOTATION_BASIS,Mapping of Quotation basis for the template SHS,SHS_QUOTATION_BASIS
-ECB,SHS_COLLATERAL_AREA,Mapping of Collateral geographical location for the template SHS,SHS_COLLATERAL_AREA
-ECB,SHS_SECURITY_STATUS,Mapping of Security status for the template SHS,SHS_SECURITY_STATUS
-ECB,SHS_ORIG_MAT_BRACKET,Mapping of Original maturity bracket (category) for the template SHS,SHS_ORIG_MAT_BRACKET
-ECB,SHS_PRICE_VALUE_TYPE,Mapping of Price value type for the template SHS,SHS_PRICE_VALUE_TYPE
-ECB,SHS_LAST_COUPON_FREQ,Mapping of Last coupon date for the template SHS,SHS_LAST_COUPON_FREQ
-ECB,SHS_ACCNTNG_CLSSFCTN,Mapping of Accounting classification of instruments for the template SHS,SHS_ACCNTNG_CLSSFCTN
-ECB,SHS_RESID_MAT_BRACKET,Mapping of Residual maturity bracket (category) for the template SHS,SHS_RESID_MAT_BRACKET
-ECB,SHS_PRICE_VALUE_BASIS,Mapping of Price value basis for the template SHS,SHS_PRICE_VALUE_BASIS
-ECB,SHS_GUARANTOR_ID_TYPE,Mapping of Guarantor ID type for the template SHS,SHS_GUARANTOR_ID_TYPE
-ECB,SHS_DIVIDEND_CURRENCY,Mapping of Dividend currency for the template SHS,SHS_DIVIDEND_CURRENCY
-ECB,SHS_ISSUER_NACE_SECTOR,Mapping of Issuer NACE sector for the template SHS,SHS_ISSUER_NACE_SECTOR
-ECB,SHS_GROUP_ACC_STANDARD,Mapping of Accounting Standard of the Group for the template SHS,SHS_GROUP_ACC_STANDARD
-ECB,SHS_DFLT_STTS_INSTRMNT,Mapping of Default status of the instrument for the template SHS,SHS_DFLT_STTS_INSTRMNT
-ECB,SHS_PRIMARY_ASSET_CLASS,Mapping of Primary asset classification for the template SHS,SHS_PRIMARY_ASSET_CLASS
-ECB,SHS_ENTITY_ACC_STANDARD,Mapping of Accounting Standard of the entity for the template SHS,SHS_ENTITY_ACC_STANDARD
-ECB,SHS_FUNCTIONAL_CATEGORY,Mapping of Function for the template SHS,SHS_FUNCTIONAL_CATEGORY
-ECB,SHS_APPRCH_PRDNTL_PRPSS,Mapping of Approach for prudential purposes for the template SHS,SHS_APPRCH_PRDNTL_PRPSS
-ECB,SHS_DIVIDEND_AMOUNT_TYPE,Mapping of Dividend amount type for the template SHS,SHS_DIVIDEND_AMOUNT_TYPE
-ECB,SHS_IMPRMNT_ASSSSMNT_MTHD,Mapping of Impairment assessment method for the template SHS,SHS_IMPRMNT_ASSSSMNT_MTHD
-ECB,SHS_INTRA_GROUP_ACC_SCOPE,Mapping of Issuer is part of the Group (accounting scope) for the template SHS,SHS_INTRA_GROUP_ACC_SCOPE
-ECB,SHS_INTRA_GROUP_PRUD_SCOPE,Mapping of Issuer is part of the Group (prudential scope) for the template SHS,SHS_INTRA_GROUP_PRUD_SCOPE
-ECB,SHS_IMMEDIATE_PARENT_ID_TYPE,Mapping of Immediate parent ID type for the template SHS,SHS_IMMEDIATE_PARENT_ID_TYPE
-ECB,SHS_ASSET_SECURITISATION_TYPE,Mapping of Asset securitisation type for the template SHS,SHS_ASSET_SECURITISATION_TYPE
