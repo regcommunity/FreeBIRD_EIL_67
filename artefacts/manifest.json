@@ -1,0 +1,20 @@
+{
+  "version": "2.0",
+  "format": "enhanced",
+  "exported_at": "2026-03-16T12:09:43.004149",
+  "counts": {
+    "database_tables": 38,
+    "database_records": 385603,
+    "filter_code": {
+      "production": 6,
+      "staging": 44
+    },
+    "derivation_files": {
+      "files": 1,
+      "config": true
+    },
+    "joins_configuration": {
+      "files": 5
+    }
+  }
+}
