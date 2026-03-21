@@ -505,7 +505,7 @@ class Non_Negotiable_bonds(F_05_01_REF_FINREP_3_0_Base):
 	def RPYMNT_RGHTS(self):
 		''' return string from RPYMNT_RGHTS enumeration '''
 		return '2'
-	def INSTRMNT_TYP_PRDCT(self):
+	def TYP_INSTRMNT(self):
 		''' return string from INSTRMNT_TYP_PRDCT enumeration '''
 		return '1022'
 	def SPCLSD_LNDNG_EXPSR_TYP(self):
@@ -589,7 +589,15 @@ class F_05_01_REF_FINREP_3_0_Non_Negotiable_bonds_Table:
 	SCRTY_EXCHNG_TRDBL_DRVTV_Table = None 
 	PRTY_Table = None 
 	Non_Negotiable_bondss = []# Non_Negotiable_bonds[]
-	@lineage(dependencies={})
+	@lineage(dependencies={"LNG_BLNC_SHT_RCGNSD_SCRTY_PSTN_PRDNTL_PRTFL_ACCNTNG_CLSSFCTN_ASSGNMNT.theLNG_BLNC_SHT_RCGNSD_SCRTY_PSTN_PRDNTL_PRTFL_ASSGNMNT",
+		"LNG_BLNC_SHT_RCGNSD_SCRTY_PSTN_PRDNTL_PRTFL_ASSGNMNT.theLNG_SHRT_BLNC_SHT_RCGNSD_SCRTY_PSTN",
+		"LNG_SHRT_BLNC_SHT_RCGNSD_SCRTY_PSTN.theBLNC_SHT_RCGNSD_NN_BLNC_SHT_RCGNSD_SCRTY_PSTN",		
+		"BLNC_SHT_RCGNSD_NN_BLNC_SHT_RCGNSD_SCRTY_PSTN.thetheSCRTY_PSTNPRTY",
+		"SCRTY_PSTN.INSTRMNT_uniqtheSCRTY_EXCHNG_TRDBL_DRVTVueID",
+		"SCRTY_EXCHNG_TRDBL_DRVTV.SCRTY_EXCHNG_TRDBL_DRVTV_uniqueID",
+		"SCRTY_ENTTY_RL_ASSGNMNT.theENTTY_RL",
+		"ENTTY_RL.thePRTY"
+		})
 	def calc_Non_Negotiable_bondss(self) :
 
 		items = [] # Non_Negotiable_bonds[
