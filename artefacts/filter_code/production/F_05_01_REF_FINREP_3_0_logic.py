@@ -464,6 +464,10 @@ class Debt_securities(F_05_01_REF_FINREP_3_0_Base):
 
 class Non_Negotiable_bonds(F_05_01_REF_FINREP_3_0_Base):
 	LNG_BLNC_SHT_RCGNSD_SCRTY_PSTN_PRDNTL_PRTFL_ACCNTNG_CLSSFCTN_ASSGNMNT = None # LNG_BLNC_SHT_RCGNSD_SCRTY_PSTN_PRDNTL_PRTFL_ACCNTNG_CLSSFCTN_ASSGNMNT
+	LNG_SHRT_BLNC_SHT_RCGNSD_SCRTY_PSTN = None # LNG_SHRT_BLNC_SHT_RCGNSD_SCRTY_PSTN
+	BLNC_SHT_RCGNSD_NN_BLNC_SHT_RCGNSD_SCRTY_PSTN = None # BLNC_SHT_RCGNSD_NN_BLNC_SHT_RCGNSD_SCRTY_PSTN
+	SCRTY_PSTN = None # SCRTY_PSTN
+	SCRTY_EXCHNG_TRDBL_DRVTV = None # SCRTY_EXCHNG_TRDBL_DRVTV
 	@lineage(dependencies={"LNG_BLNC_SHT_RCGNSD_SCRTY_PSTN_PRDNTL_PRTFL_ACCNTNG_CLSSFCTN_ASSGNMNT.GRSS_CRRYNG_AMNT"})
 	def GRSS_CRRYNG_AMNT(self):
 		return self.LNG_BLNC_SHT_RCGNSD_SCRTY_PSTN_PRDNTL_PRTFL_ACCNTNG_CLSSFCTN_ASSGNMNT.GRSS_CRRYNG_AMNT
@@ -487,10 +491,9 @@ class Non_Negotiable_bonds(F_05_01_REF_FINREP_3_0_Base):
 	@lineage(dependencies={"SCRTY_EXCHNG_TRDBL_DRVTV.NGTBL_SCRTY_INDCTR"})
 	def NGTBL_SCRTY_INDCTR(self):
 		return self.SCRTY_EXCHNG_TRDBL_DRVTV.NGTBL_SCRTY_INDCTR
-	EXCHNG_TRDBL_DRVTV_PSTN = None # EXCHNG_TRDBL_DRVTV_PSTN
-	@lineage(dependencies={"EXCHNG_TRDBL_DRVTV_PSTN.HLD_SL_INDCTR"})
+	@lineage(dependencies={"LNG_SHRT_BLNC_SHT_RCGNSD_SCRTY_PSTN.HLD_SL_INDCTR"})
 	def HLD_SL_INDCTR(self):
-		return self.EXCHNG_TRDBL_DRVTV_PSTN.HLD_SL_INDCTR
+		return self.LNG_SHRT_BLNC_SHT_RCGNSD_SCRTY_PSTN.HLD_SL_INDCTR
 	SCRTY_ENTTY_RL_ASSGNMNT = None # SCRTY_ENTTY_RL_ASSGNMNT
 	@lineage(dependencies={"SCRTY_ENTTY_RL_ASSGNMNT.ENTTY_RL_TYP"})
 	def PRTY_RL_TYP(self):
@@ -502,12 +505,11 @@ class Non_Negotiable_bonds(F_05_01_REF_FINREP_3_0_Base):
 	def RPYMNT_RGHTS(self):
 		''' return string from RPYMNT_RGHTS enumeration '''
 		return '2'
-	def INSTRMNT_TYP_PRDCT(self):
+	def TYP_INSTRMNT(self):
 		''' return string from INSTRMNT_TYP_PRDCT enumeration '''
 		return '1022'
-	@lineage(dependencies={"INSTRMNT_RL.SPCLSD_LNDNG_EXPSR_TYP"})
 	def SPCLSD_LNDNG_EXPSR_TYP(self):
-		return self.INSTRMNT_RL.SPCLSD_LNDNG_EXPSR_TYP
+		return '0'
 	def MN_DBTR_INDCTR(self):
 		# return 1 for main debtor
 		return '1'
@@ -576,32 +578,37 @@ class F_05_01_REF_FINREP_3_0_Other_loans_Table:
 
 
 class F_05_01_REF_FINREP_3_0_Non_Negotiable_bonds_Table:
-	LNG_SCRTY_PSTN_PRDNTL_PRTFL_ASSGNMNT_ACCNTNG_CLSSFCTN_FNNCL_ASSTS_ASSGNMNT_Table = None # LNG_SCRTY_PSTN_PRDNTL_PRTFL_ASSGNMNT_ACCNTNG_CLSSFCTN_FNNCL_ASSTS_ASSGNMNT
-	LNG_SCRTY_PSTN_PRDNTL_PRTFL_ASSGNMNT_Table = None # LNG_SCRTY_PSTN_PRDNTL_PRTFL_ASSGNMNT
-	PRTY_Table = None # PRTY
-	SCRTY_EXCHNG_TRDBL_DRVTV_Table = None # SCRTY_EXCHNG_TRDBL_DRVTV
-	SCRTY_ENTTY_RL_ASSGNMNT_Table = None # SCRTY_ENTTY_RL_ASSGNMNT
-	SCRTY_PSTN_Table = None # SCRTY_PSTN
+	LNG_BLNC_SHT_RCGNSD_SCRTY_PSTN_PRDNTL_PRTFL_ACCNTNG_CLSSFCTN_ASSGNMNT_Table = None 
+	SCRTY_ENTTY_RL_ASSGNMNT_Table = None 
+	ENTTY_RL_Table = None 
+	SCRTY_EXCHNG_TRDBL_DRVTV_Table = None 
+	LNG_BLNC_SHT_RCGNSD_SCRTY_PSTN_PRDNTL_PRTFL_ASSGNMNT_Table = None 
+	LNG_SHRT_BLNC_SHT_RCGNSD_SCRTY_PSTN_Table = None 
+	BLNC_SHT_RCGNSD_NN_BLNC_SHT_RCGNSD_SCRTY_PSTN_Table = None 
+	SCRTY_PSTN_Table = None 
+	SCRTY_EXCHNG_TRDBL_DRVTV_Table = None 
+	PRTY_Table = None 
 	Non_Negotiable_bondss = []# Non_Negotiable_bonds[]
-	@lineage(dependencies={"LNG_SCRTY_PSTN_PRDNTL_PRTFL_ASSGNMNT_ACCNTNG_CLSSFCTN_FNNCL_ASSTS_ASSGNMNT.theLNG_SCRTY_PSTN_PRDNTL_PRTFL_ASSGNMNT",
-		"LNG_SCRTY_PSTN_PRDNTL_PRTFL_ASSGNMNT.theSCRTY_PSTN",
-		"SCRTY_PSTN.theSCRTY_EXCHNG_TRDBL_DRVTV",		
-		"SCRTY_ENTTY_RL_ASSGNMNT.theSCRTY_EXCHNG_TRDBL_DRVTV",
-		"SCRTY_ENTTY_RL_ASSGNMNT.theENTTY_RL",
-		"ENTTY_RL.thePRTY",
-		"PRTY.PRTY_uniqueID",
-		"SCRTY_EXCHNG_TRDBL_DRVTV.NGTBL_SCRTY_INDCTR",
-		"LNG_SCRTY_PSTN_PRDNTL_PRTFL_ASSGNMNT.LNG_SCRTY_PSTN_PRDNTL_PRTFL_ASSGNMNT_uniqueID",
-		"SCRTY_PSTN.SCRTY_PSTN_uniqueID",
+	@lineage(dependencies={"LNG_BLNC_SHT_RCGNSD_SCRTY_PSTN_PRDNTL_PRTFL_ACCNTNG_CLSSFCTN_ASSGNMNT.theLNG_BLNC_SHT_RCGNSD_SCRTY_PSTN_PRDNTL_PRTFL_ASSGNMNT",
+		"LNG_BLNC_SHT_RCGNSD_SCRTY_PSTN_PRDNTL_PRTFL_ASSGNMNT.theLNG_SHRT_BLNC_SHT_RCGNSD_SCRTY_PSTN",
+		"LNG_SHRT_BLNC_SHT_RCGNSD_SCRTY_PSTN.theBLNC_SHT_RCGNSD_NN_BLNC_SHT_RCGNSD_SCRTY_PSTN",		
+		"BLNC_SHT_RCGNSD_NN_BLNC_SHT_RCGNSD_SCRTY_PSTN.thetheSCRTY_PSTNPRTY",
+		"SCRTY_PSTN.INSTRMNT_uniqtheSCRTY_EXCHNG_TRDBL_DRVTVueID",
 		"SCRTY_EXCHNG_TRDBL_DRVTV.SCRTY_EXCHNG_TRDBL_DRVTV_uniqueID",
-		"ENTTY_RL.ENTTY_RL_uniqueID"		
+		"SCRTY_ENTTY_RL_ASSGNMNT.theENTTY_RL",
+		"ENTTY_RL.thePRTY"
 		})
 	def calc_Non_Negotiable_bondss(self) :
+
 		items = [] # Non_Negotiable_bonds[
-		for long_Security_accntng_classification in self.LNG_SCRTY_PSTN_PRDNTL_PRTFL_ASSGNMNT_ACCNTNG_CLSSFCTN_FNNCL_ASSTS_ASSGNMNT_Table:
-			long_Security_assignment = long_Security_accntng_classification.theLNG_SCRTY_PSTN_PRDNTL_PRTFL_ASSGNMNT
-			scrty_position = long_Security_assignment.theSCRTY_PSTN
-			scrty_exchng_trdbl_drvtv = scrty_position.theSCRTY_EXCHNG_TRDBL_DRVTV	
+		for long_Security_accntng_classification in self.LNG_BLNC_SHT_RCGNSD_SCRTY_PSTN_PRDNTL_PRTFL_ACCNTNG_CLSSFCTN_ASSGNMNT_Table:
+			long_Security_assignment = long_Security_accntng_classification.theLNG_BLNC_SHT_RCGNSD_SCRTY_PSTN_PRDNTL_PRTFL_ASSGNMNT
+			lng_shrt_blnc_sht_rcgnsd_scrty_pstn = long_Security_assignment.theLNG_SHRT_BLNC_SHT_RCGNSD_SCRTY_PSTN
+			blnc_sht_rcgnsd_nn_blnc_sht_rcgnsd_scrty_pstn = lng_shrt_blnc_sht_rcgnsd_scrty_pstn.theBLNC_SHT_RCGNSD_NN_BLNC_SHT_RCGNSD_SCRTY_PSTN
+			scrty_pstn = blnc_sht_rcgnsd_nn_blnc_sht_rcgnsd_scrty_pstn.theSCRTY_PSTN
+			scrty_exchng_trdbl_drvtv = scrty_pstn.theSCRTY_EXCHNG_TRDBL_DRVTV	
+			
+			
 			new_item = Non_Negotiable_bonds()
 
 			for scrty_entty_rl_assignment in self.SCRTY_ENTTY_RL_ASSGNMNT_Table:
@@ -612,14 +619,23 @@ class F_05_01_REF_FINREP_3_0_Non_Negotiable_bonds_Table:
 					new_item.PRTY = prty
 					break
 			
-			new_item.LNG_SCRTY_PSTN_PRDNTL_PRTFL_ASSGNMNT_ACCNTNG_CLSSFCTN_FNNCL_ASSTS_ASSGNMNT = long_Security_accntng_classification
-			new_item.PRTY = prty
+			new_item.LNG_BLNC_SHT_RCGNSD_SCRTY_PSTN_PRDNTL_PRTFL_ACCNTNG_CLSSFCTN_ASSGNMNT = long_Security_accntng_classification
+			new_item.LNG_SHRT_BLNC_SHT_RCGNSD_SCRTY_PSTN = lng_shrt_blnc_sht_rcgnsd_scrty_pstn
+			new_item.BLNC_SHT_RCGNSD_NN_BLNC_SHT_RCGNSD_SCRTY_PSTN = blnc_sht_rcgnsd_nn_blnc_sht_rcgnsd_scrty_pstn
+			new_item.SCRTY_PSTN = scrty_pstn
 			new_item.SCRTY_EXCHNG_TRDBL_DRVTV = scrty_exchng_trdbl_drvtv
-			negotiable = scrty_exchng_trdbl_drvtv.NGTBL_SCRTY_INDCTR
-			# only add if not a negotiable security
-			if negotiable == '2':
-				items.append(new_item)
+			items.append(new_item)
 		return items
+	
+	@track_table_init
+	def init(self):
+		Orchestration().init(self)
+		self.Non_Negotiable_bondss = []
+		self.Non_Negotiable_bondss.extend(self.calc_Non_Negotiable_bondss())
+		
+		
+		CSVConverter.persist_object_as_csv(self,True)
+		return None
 
 class F_05_01_REF_FINREP_3_0_Advances_that_are_not_loans_Table:
 	INSTRMNT_Table = None # INSTRMNT

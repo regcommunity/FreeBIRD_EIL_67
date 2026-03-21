@@ -810,21 +810,59 @@ class F_04_01_REF_FINREP_3_0_Equity_instruments_instrument_Table:
 
 
 class F_04_01_REF_FINREP_3_0_Debt_securities_Table:
-	LNG_SCRTY_PSTN_PRDNTL_PRTFL_ASSGNMNT_ACCNTNG_CLSSFCTN_FNNCL_ASSTS_ASSGNMNT_Table = None # LNG_SCRTY_PSTN_PRDNTL_PRTFL_ASSGNMNT_ACCNTNG_CLSSFCTN_FNNCL_ASSTS_ASSGNMNT
-	PRTY_Table = None # PRTY
-	SCRTY_ENTTY_RL_ASSGNMNT_Table = None # SCRTY_ENTTY_RL_ASSGNMNT
-	SCRTY_EXCHNG_TRDBL_DRVTV_Table = None # SCRTY_EXCHNG_TRDBL_DRVTV
+	LNG_BLNC_SHT_RCGNSD_SCRTY_PSTN_PRDNTL_PRTFL_ACCNTNG_CLSSFCTN_ASSGNMNT_Table = None 
+	SCRTY_ENTTY_RL_ASSGNMNT_Table = None 
+	ENTTY_RL_Table = None 
+	SCRTY_EXCHNG_TRDBL_DRVTV_Table = None 
+	LNG_BLNC_SHT_RCGNSD_SCRTY_PSTN_PRDNTL_PRTFL_ASSGNMNT_Table = None 
+	LNG_SHRT_BLNC_SHT_RCGNSD_SCRTY_PSTN_Table = None 
+	BLNC_SHT_RCGNSD_NN_BLNC_SHT_RCGNSD_SCRTY_PSTN_Table = None 
+	SCRTY_PSTN_Table = None 
+	SCRTY_EXCHNG_TRDBL_DRVTV_Table = None 
+	PRTY_Table = None 
 	Debt_securitiess = []# Debt_securities[]
+	@lineage(dependencies={"LNG_BLNC_SHT_RCGNSD_SCRTY_PSTN_PRDNTL_PRTFL_ACCNTNG_CLSSFCTN_ASSGNMNT.theLNG_BLNC_SHT_RCGNSD_SCRTY_PSTN_PRDNTL_PRTFL_ASSGNMNT",
+		"LNG_BLNC_SHT_RCGNSD_SCRTY_PSTN_PRDNTL_PRTFL_ASSGNMNT.theLNG_SHRT_BLNC_SHT_RCGNSD_SCRTY_PSTN",
+		"LNG_SHRT_BLNC_SHT_RCGNSD_SCRTY_PSTN.theBLNC_SHT_RCGNSD_NN_BLNC_SHT_RCGNSD_SCRTY_PSTN",		
+		"BLNC_SHT_RCGNSD_NN_BLNC_SHT_RCGNSD_SCRTY_PSTN.thetheSCRTY_PSTNPRTY",
+		"SCRTY_PSTN.INSTRMNT_uniqtheSCRTY_EXCHNG_TRDBL_DRVTVueID",
+		"SCRTY_EXCHNG_TRDBL_DRVTV.SCRTY_EXCHNG_TRDBL_DRVTV_uniqueID",
+		"SCRTY_ENTTY_RL_ASSGNMNT.theENTTY_RL",
+		"ENTTY_RL.thePRTY"
+		})
 	def calc_Debt_securitiess(self) :
-		items = [] # Debt_securities[
-		# Join up any refered tables that you need to join
-		# loop through the main table
-		# set any references you want to on the new Item so that it can refer to themin operations
+		items = [] # Debt_securitiess
+		for long_Security_accntng_classification in self.LNG_BLNC_SHT_RCGNSD_SCRTY_PSTN_PRDNTL_PRTFL_ACCNTNG_CLSSFCTN_ASSGNMNT_Table:
+			long_Security_assignment = long_Security_accntng_classification.theLNG_BLNC_SHT_RCGNSD_SCRTY_PSTN_PRDNTL_PRTFL_ASSGNMNT
+			lng_shrt_blnc_sht_rcgnsd_scrty_pstn = long_Security_assignment.theLNG_SHRT_BLNC_SHT_RCGNSD_SCRTY_PSTN
+			blnc_sht_rcgnsd_nn_blnc_sht_rcgnsd_scrty_pstn = lng_shrt_blnc_sht_rcgnsd_scrty_pstn.theBLNC_SHT_RCGNSD_NN_BLNC_SHT_RCGNSD_SCRTY_PSTN
+			scrty_pstn = blnc_sht_rcgnsd_nn_blnc_sht_rcgnsd_scrty_pstn.theSCRTY_PSTN
+			scrty_exchng_trdbl_drvtv = scrty_pstn.theSCRTY_EXCHNG_TRDBL_DRVTV	
+			
+			new_item = Debt_securities()
+
+			for scrty_entty_rl_assignment in self.SCRTY_ENTTY_RL_ASSGNMNT_Table:
+				if scrty_entty_rl_assignment.theSCRTY_EXCHNG_TRDBL_DRVTV.SCRTY_EXCHNG_TRDBL_DRVTV_uniqueID == scrty_exchng_trdbl_drvtv.SCRTY_EXCHNG_TRDBL_DRVTV_uniqueID:
+					new_item.SCRTY_ENTTY_RL_ASSGNMNT = scrty_entty_rl_assignment
+					entty_rl = scrty_entty_rl_assignment.theENTTY_RL
+					prty = entty_rl.thePRTY
+					new_item.PRTY = prty
+					break
+			
+			new_item.LNG_BLNC_SHT_RCGNSD_SCRTY_PSTN_PRDNTL_PRTFL_ACCNTNG_CLSSFCTN_ASSGNMNT = long_Security_accntng_classification
+			new_item.LNG_SHRT_BLNC_SHT_RCGNSD_SCRTY_PSTN = lng_shrt_blnc_sht_rcgnsd_scrty_pstn
+			new_item.BLNC_SHT_RCGNSD_NN_BLNC_SHT_RCGNSD_SCRTY_PSTN = blnc_sht_rcgnsd_nn_blnc_sht_rcgnsd_scrty_pstn
+			new_item.SCRTY_PSTN = scrty_pstn
+			new_item.SCRTY_EXCHNG_TRDBL_DRVTV = scrty_exchng_trdbl_drvtv
+			items.append(new_item)
 		return items
+
+	@track_table_init
 	def init(self):
 		Orchestration().init(self)
 		self.Debt_securitiess = []
 		self.Debt_securitiess.extend(self.calc_Debt_securitiess())
+				
 		CSVConverter.persist_object_as_csv(self,True)
 		return None
 
