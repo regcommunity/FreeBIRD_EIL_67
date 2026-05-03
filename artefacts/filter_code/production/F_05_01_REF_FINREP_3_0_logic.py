@@ -527,7 +527,8 @@ class F_05_01_REF_FINREP_3_0_Other_loans_Table:
 		"ENTTY_RL.thePRTY",
 		"INSTRMNT.INSTRMNT_uniqueID",
 		"INSTRMNT_ENTTY_RL_ASSGNMNT.INSTRMNT_ENTTY_RL_ASSGNMNT_uniqueID",
-		"PRTY.PRTY_uniqueID"
+		"PRTY.PRTY_uniqueID",
+		"INSTRMNT_RL.theINSTRMNT"
 		})
 	def calc_Other_loanss(self) :
 		
@@ -649,7 +650,8 @@ class F_05_01_REF_FINREP_3_0_Advances_that_are_not_loans_Table:
 		"ENTTY_RL.thePRTY",
 		"INSTRMNT.INSTRMNT_uniqueID",
 		"INSTRMNT_ENTTY_RL_ASSGNMNT.INSTRMNT_ENTTY_RL_ASSGNMNT_uniqueID",
-		"PRTY.PRTY_uniqueID"
+		"PRTY.PRTY_uniqueID",
+		"INSTRMNT_RL.theINSTRMNT"
 		})
 	def calc_Advances_that_are_not_loanss(self) :
 		items = [] # 
@@ -699,7 +701,8 @@ class F_05_01_REF_FINREP_3_0_Credit_card_debt_Table:
 		"ENTTY_RL.thePRTY",
 		"INSTRMNT.INSTRMNT_uniqueID",
 		"INSTRMNT_ENTTY_RL_ASSGNMNT.INSTRMNT_ENTTY_RL_ASSGNMNT_uniqueID",
-		"PRTY.PRTY_uniqueID"
+		"PRTY.PRTY_uniqueID",
+		"INSTRMNT_RL.theINSTRMNT"
 		})
 	def calc_Credit_card_debts(self) :
 		items = [] # 
@@ -752,7 +755,8 @@ class F_05_01_REF_FINREP_3_0_Finance_leases_Table:
 		"ENTTY_RL.thePRTY",
 		"INSTRMNT.INSTRMNT_uniqueID",
 		"INSTRMNT_ENTTY_RL_ASSGNMNT.INSTRMNT_ENTTY_RL_ASSGNMNT_uniqueID",
-		"PRTY.PRTY_uniqueID"
+		"PRTY.PRTY_uniqueID",
+		"INSTRMNT_RL.theINSTRMNT"
 		})
 	def calc_Finance_leasess(self) :
 		items = [] # 
@@ -805,6 +809,7 @@ class F_05_01_REF_FINREP_3_0_Trade_receivables_Table:
 		"INSTRMNT.INSTRMNT_uniqueID",
 		"INSTRMNT_ENTTY_RL_ASSGNMNT.INSTRMNT_ENTTY_RL_ASSGNMNT_uniqueID",
 		"PRTY.PRTY_uniqueID",
+		"INSTRMNT_RL.theINSTRMNT"
 		})
 	def calc_Trade_receivabless(self) :
 		items = [] # Other_loans[
@@ -855,7 +860,8 @@ class F_05_01_REF_FINREP_3_0_On_demand_and_short_notice_Table:
 		"ENTTY_RL.thePRTY",
 		"INSTRMNT.INSTRMNT_uniqueID",
 		"INSTRMNT_ENTTY_RL_ASSGNMNT.INSTRMNT_ENTTY_RL_ASSGNMNT_uniqueID",
-		"PRTY.PRTY_uniqueID"
+		"PRTY.PRTY_uniqueID",
+		"INSTRMNT_RL.theINSTRMNT"
 		})
 	def calc_On_demand_and_short_notices(self) :
 		items = [] # On_demand_and_short_notice
@@ -900,7 +906,8 @@ class F_05_01_REF_FINREP_3_0_Reverse_repurchase_agreements_Table:
 		"ENTTY_RL.thePRTY",
 		"INSTRMNT.INSTRMNT_uniqueID",
 		"INSTRMNT_ENTTY_RL_ASSGNMNT.INSTRMNT_ENTTY_RL_ASSGNMNT_uniqueID",
-		"PRTY.PRTY_uniqueID"
+		"PRTY.PRTY_uniqueID",
+		"INSTRMNT_RL.theINSTRMNT"
 		})
 	def calc_Reverse_repurchase_agreementss(self) :
 		items = [] # On_demand_and_short_notice
